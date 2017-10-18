@@ -1,0 +1,22 @@
+NOTES_SAVE_DIR=$HOME/my_notes.md
+NODE_STR=""
+
+notes() {
+  while getopts "s:f:" arg; do
+    case $arg in
+      s)
+        NOTE_STR=$OPTARG
+        echo $OPTARG >> $NOTES_SAVE_DIR
+        echo 'Yo! your note has been saved!'
+        ;;
+      f)
+        FILE_NAME=$OPTARG
+        echo NODE_STR=$NODE_STR
+      ;;
+    esac
+  done
+}
+
+shownotes() {
+  cat $NOTES_SAVE_DIR
+}

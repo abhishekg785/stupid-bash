@@ -4,4 +4,10 @@ note_shell
 take notes from shell
                -------
 
+Todo :
 
+1. Make the script executable : chmod -x notes
+2. Move the shell script to your bin folder i.e /usr/bin (To run the executable from anywhere in the shell! obvious :P)
+
+Start using this stupid note taking thing, if you want :P
+Just type notes in the shell and start using it.
